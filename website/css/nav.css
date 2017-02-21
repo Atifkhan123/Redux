@@ -1,37 +1,45 @@
-/* Variables */
-/* Small Navigation */
-.logo-small {
-  float: right; }
+body {
+  margin-top: 0rem;
+  }
 
   .title-bar {
-    padding: 0 .5rem; }
+    background: #333;
+    padding: 0.9rem;
+    }
 
-    .menu-icon,
-    .title-bar-title {
-      position: relative;
-      top: 10px; }
+    .top-bar {
+      background: #333; }
+      .top-bar ul {
+        background: #333; }
+        .top-bar ul li {
+          font-family: 'Orbitron', sans-serif;
+          background: #333; }
+          .top-bar ul li a {
+            color: #fff; }
 
-      /* Medium-Up Navigation */
-      @media only screen and (min-width: 40rem) {
-        .logo-wrapper {
-          position: relative; }
-          .logo-wrapper .logo {
-            width: 118px;
-            height: 92px;
-            position: absolute;
-            left: 50%;
-            right: 50%;
-            top: -6px;
-            margin-left: -59px; }
+            .menu-text {
+              color: #fff; }
+              @media only screen and (max-width: 40em) {
+                .menu-text {
+                  display: none !important; } }
 
-            .top-bar-right {
-              width: 50%;
-              padding-left: 86px; }
-              .top-bar-right ul {
-                float: left; }
+                  @media only screen and (min-width: 40em) {
+                    .menu:last-child {
+                      border-left: 1px solid #4e4e4e; }
 
-                .top-bar-left {
-                  width: 50%;
-                  padding-right: 86px; }
-                  .top-bar-left ul {
-                    float: right; } }
+                      .menu:first-child {
+                        border-left: none; }
+
+                        .menu li:not(:last-child) {
+                          border-right: 1px solid #4e4e4e; } }
+                          .dropdown.menu .submenu {
+                            border: none; }
+
+                            .dropdown.menu .is-dropdown-submenu-parent.is-right-arrow > a::after {
+                              border-color: #fff transparent transparent; }
+
+                              .is-drilldown-submenu-parent > a::after {
+                                border-color: transparent transparent transparent #fff; }
+
+                                .js-drilldown-back::before {
+                                  border-color: transparent #fff transparent transparent; }

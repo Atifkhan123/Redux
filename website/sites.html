@@ -11,96 +11,44 @@
     <link rel="stylesheet" href="css/hero.css">
     <link rel="stylesheet" href="css/content.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
   </head>
   <body>
     <!-- begin nav -->
-    <!-- Small Navigation -->
-
-    <div class="title-bar" data-responsive-toggle="nav-menu" data-hide-for="medium">
-
-      <a class="logo-small show-for-small-only" href="#"><img src="http://placehold.it/50x50?text=LOGO" /></a>
-
+    <div class="title-bar" data-responsive-toggle="main-menu" data-hide-for="medium">
       <button class="menu-icon" type="button" data-toggle></button>
-
       <div class="title-bar-title">Menu</div>
-
     </div>
 
-
-
-    <!-- Medium-Up Navigation -->
-
-    <nav class="top-bar" id="nav-menu">
-
-
-
-      <div class="logo-wrapper hide-for-small-only">
-
-        <div class="logo">
-
-          <img src="http://placehold.it/350x150?text=LOGO">
-
-        </div>
-
-      </div>
-
-
-
-      <!-- Left Nav Section -->
-
+    <div class="top-bar" id="main-menu">
       <div class="top-bar-left">
-
-        <ul class="vertical medium-horizontal menu">
-
-          <li><a href="#">Menu 1</a></li>
-
-          <li><a href="#">Menu 2</a></li>
-
-          <li><a href="#">Menu 3</a></li>
-
+        <ul class="dropdown menu" data-dropdown-menu>
+          <li class="menu-text">HORIZON Zero Dawn</li>
         </ul>
-
       </div>
-
-
-
-      <!-- Right Nav Section -->
-
       <div class="top-bar-right">
+        <ul class="menu" data-responsive-menu="drilldown medium-dropdown">
 
-        <ul class="vertical medium-horizontal menu" data-responsive-menu="drilldown medium-dropdown">
-
+          <li><a href="#">HOME</a></li>
           <li class="has-submenu">
-
-            <a href="#">Menu 4</a>
-
-            <ul class="submenu menu vertical medium-horizontal" data-submenu>
-
-              <li><a href="#">First link in dropdown</a></li>
-
-            </ul>
-
-          </li>
-
-          <li class="has-submenu">
-
-            <a href="#">Menu 5</a>
-
+            <a href="#">GAME</a>
             <ul class="submenu menu vertical" data-submenu>
-
-              <li><a href="#">First link in dropdown</a></li>
-
+              <li><a href="#">CHARACTERS</a></li>
+              <li><a href="#">WEAPONS</a></li>
+              <li><a href="#">LOCATIONS</a></li>
             </ul>
-
           </li>
-
+          <li class="has-submenu">
+            <a href="#">ABOUT US</a>
+            <ul class="submenu menu vertical" data-submenu>
+              <li><a href="#">PLAYSTATION</a></li>
+              <li><a href="#">GUIRELLA GAMES</a></li>
+              <li><a href="#">Sony Interactive Entertainment</a></li>
+            </ul>
+          </li>
         </ul>
-
       </div>
-
-
-
-    </nav>
+    </div>
     <!-- end nav-->
 
     <!-- begin hero -->
@@ -111,16 +59,20 @@
             <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
             <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
             <li class="is-active orbit-slide">
-              <img class="orbit-image" src="http://foundation.zurb.com/sites/docs/assets/img/orbit/01.jpg" alt="Space">
-              <span class="orbit-caption"><p>Vertical aligning of text over image on Orbit Slider</p></span>
+              <img class="orbit-image" src="http://static3.gamespot.com/uploads/screen_kubrick/1365/13658182/3079326-horizonzerodawn_e32016_shellwalkers_1465873617.jpg" alt="Space">
+              <span class="orbit-caption"><p>ADVENTURE BEGINS</p></span>
             </li>
             <li class="orbit-slide">
-              <img class="orbit-image" src="http://foundation.zurb.com/sites/docs/assets/img/orbit/01.jpg" alt="Space">
-              <span class="orbit-caption"><p>Vertical aligning of text over image on Orbit Slider</p></span>
+              <img class="orbit-image" src="http://www.geek.com/wp-content/uploads/2016/06/horizon-zero-dawn-screen-04-us-15jun15.jpg" alt="Space">
+              <span class="orbit-caption"><p>BREATH TAKING VISUALS</p></span>
             </li>
             <li class="orbit-slide">
-              <img class="orbit-image" src="http://foundation.zurb.com/sites/docs/assets/img/orbit/01.jpg" alt="Space">
-              <span class="orbit-caption"><p>Vertical aligning of text over image on Orbit Slider</p></span>
+              <img class="orbit-image" src="http://static4.gamespot.com/uploads/original/1365/13658182/3079328-horizonzerodawn_e32016_thunderjaw_tallneck_1465873632.jpg" alt="Space">
+              <span class="orbit-caption"><p>HORIZON <br> Zero Dawn</p></span>
+            </li>
+            <li class="orbit-slide">
+              <img class="orbit-image" src="http://static.blog.playstation.com/wp-content/uploads/2016/06/bloghome_ps_hires.jpg" alt="Space">
+              <span class="orbit-caption"><p>Only On <br> PLAYSTATION</p></span>
             </li>
           </ul>
           <nav class="orbit-bullets">
@@ -128,6 +80,7 @@
             <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
             <button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
             <button data-slide="3"><span class="show-for-sr">Fourth slide details.</span></button>
+            <button data-slide="4"><span class="show-for-sr">Fifth slide details.</span></button>
           </nav>
         </div>
       </div>
